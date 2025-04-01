@@ -19,6 +19,15 @@ class AppTheme {
 
 ThemeData themeData() => ThemeData(
       useMaterial3: true,
+      appBarTheme: const AppBarTheme(
+        centerTitle: false,
+        iconTheme: IconThemeData(color: Colors.red),
+        titleTextStyle: TextStyle(
+          color: Colors.red,
+          fontSize: 20,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
       colorSchemeSeed: colorsList[selectedColor]
   );
 
